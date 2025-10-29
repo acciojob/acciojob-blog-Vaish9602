@@ -111,5 +111,18 @@
     © 2025 Accio Jobs
   </footer>
 
+  <!-- Auto Page Scrolling Script -->
+  <script>
+    // Automatically scrolls page downward slowly
+    let scrollSpeed = 1; // pixels per step
+    function autoScroll() {
+      window.scrollBy(0, scrollSpeed);
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        window.scrollTo(0, 0); // scroll back to top when reaching bottom
+      }
+    }
+    setInterval(autoScroll, 50); // adjust speed (lower = slower)
+  </script>
+
 </body>
 </html>
